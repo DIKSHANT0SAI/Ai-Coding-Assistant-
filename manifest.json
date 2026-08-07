@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "algo zenith AI Helper",
+  "version": "0.1",
+  "author": "Dikshant",
+  "description": "A description about your Chrome Extension...",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://maang.in/*"
+      ],
+      "js": [
+        "libs/marked.min.js",
+        "content.js"
+      ],
+      "css": ["ui/styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources" : [
+    {
+      "resources": [
+      "main.js",
+      "ui/*.js",
+      "utils/*.js",
+      "api/*.js",
+      "assets/bookmark.png"
+    ],
+    "matches": ["https://maang.in/*"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "A tooltip popup description when you hover over the Chrome Extension icon."
+  }
+}
