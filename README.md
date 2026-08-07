@@ -150,17 +150,6 @@ allowing the AI to generate relevant answers.
 
 ---
 
-## 📸 Screenshots
-
-### AI Help Button
-
-(Add Screenshot)
-
-### AI Chat
-
-(Add Screenshot)
-
----
 
 ## ⚙ Installation
 
